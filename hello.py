@@ -15,5 +15,9 @@ def about():
   return """This is a about page<br />
     <a href="/">back to home</a>"""
 
+@app.route("/html")
+def home_html():
+  return render_template("index.html")
+
 if __name__ == "__main__":
   app.run(debug= True)
