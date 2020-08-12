@@ -7,7 +7,8 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
   return """Hello, world!<br />
-    <a href="/about">about</a>"""
+    <a href="/about">about</a><br />
+    <a href="/html">view HTML</a>"""
 
 # /about directory
 @app.route("/about")
