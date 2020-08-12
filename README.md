@@ -20,6 +20,7 @@ This is the tutorial of learning `Flask`, a web framework in Python.
 - Still in terminal console, type to activate virtual environment
   ```
   # on MacOS or Linux
+  virtualenv venv
   source venv/bin/activate
 
   # on Windows
@@ -27,7 +28,7 @@ This is the tutorial of learning `Flask`, a web framework in Python.
   ```
 - Install Python dependencies inside `requirements.txt`
   ```bash
-  pip install requirements.txt
+  pip install -r requirements.txt
   ```
 - Now we can use Flask directly by
   ```bash
