@@ -8,5 +8,10 @@ app = Flask(__name__)
 def hello_world():
   return "Hello, world!"
 
+# /about directory
+@app.route("/about")
+def about():
+  return "This is a about page"
+
 if __name__ == "__main__":
-  app.run()
+  app.run(debug= True)
