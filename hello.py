@@ -6,12 +6,14 @@ app = Flask(__name__)
 # main route directory: "/"
 @app.route("/")
 def hello_world():
-  return "Hello, world!"
+  return """Hello, world!<br />
+    <a href="/about">about</a>"""
 
 # /about directory
 @app.route("/about")
 def about():
-  return "This is a about page"
+  return """This is a about page<br />
+    <a href="/">back to home</a>"""
 
 if __name__ == "__main__":
   app.run(debug= True)
